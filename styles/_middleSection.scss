@@ -1,0 +1,202 @@
+#middleSection {
+  width: 274px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 6.15px;
+  color: white;
+  font-family: "Nolan-Bold";
+  #fisrtsTexts {
+    margin-top: 19.5px;
+    display: block;
+    margin-bottom: 21px;
+  }
+  #animatedMiddleSection {
+    //display flex
+    margin-bottom: 27px;
+    display: none;
+    flex-direction: row;
+    margin-bottom: 15px;
+    height: 81px;
+    #vaccines {
+      //display flex
+      display: none;
+      margin-top: 7.5px;
+      width: 38px;
+      #syringer1 {
+        display: none;
+        width: 15.5px;
+        height: 59px;
+      }
+      #plusIcon {
+        display: none;
+        width: 7px;
+        height: 7px;
+        opacity: 0.14;
+        position: relative;
+        top: 30px;
+      }
+      #syringer2 {
+        display: none;
+        width: 15.5px;
+        height: 59px;
+      }
+    }
+    #middleInfo {
+      margin-left: 9px;
+      #texts {
+        #firstTitle {
+          display: none;
+          font-family: "Nolan-Bold";
+          font-weight: 900;
+          position: absolute;
+          left: 60px;
+          font-size: 21px;
+          margin-top: 36px;
+          margin-bottom: 19.5px;
+        }
+        #secondTitle {
+          display: none;
+          font-family: "Nolan-Bold";
+          font-weight: 900;
+          text-align: center;
+          font-size: 21px;
+          margin-top: 36px;
+          margin-bottom: 0;
+          position: absolute;
+        }
+        #thirdTitle {
+          width: 230px;
+          display: none;
+          font-family: "Nolan-Bold";
+          font-weight: 900;
+          font-size: 12.6px;
+          margin: 36px 0 0 0;
+          position: absolute;
+        }
+        #secondText {
+          width: 230px;
+          position: absolute;
+          display: none;
+          font-family: "Nolan-Bold";
+          font-size: 9.3px;
+          margin: 60px 39px 3px 0;
+        }
+      }
+      #learnMore {
+        cursor: pointer;
+        //display block
+        margin-top: 72px;
+        display: none;
+        position: relative;
+        #backgroundButton {
+          position: absolute;
+          display: block;
+          width: 160px;
+          height: 18.5px;
+        }
+        #textButton {
+          position: absolute;
+          display: block;
+          width: 85px;
+          height: 8.5px;
+          left: 41.75px;
+          top: 4.5px;
+        }
+      }
+    }
+  }
+  #prescribing {
+    //display flex
+    display: flex;
+    margin: 0;
+    #prescribingLink {
+      font-size: 6px;
+      margin: 0;
+      a {
+        color: white;
+      }
+    }
+    #prescribingArrow {
+      margin: 0 0 0 2.4px;
+      a {
+        color: white;
+        text-decoration-line: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 301px) {
+  #middleSection {
+    width: 548px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 7.4px;
+    #animatedMiddleSection {
+      #vaccines {
+        margin-top: 7.5px;
+        width: 76px;
+        #syringer1 {
+          display: none;
+          width: 20px;
+          height: 59px;
+        }
+        #plusIcon {
+          display: none;
+          width: 10px;
+          height: 10px;
+        }
+        #syringer2 {
+          display: none;
+          width: 20px;
+          height: 59px;
+        }
+      }
+      #middleInfo {
+        margin-left: 18px;
+        #texts {
+          #firstTitle {
+            left: 180px;
+            font-size: 30px;
+          }
+          #secondTitle {
+            left: 150px;
+            font-size: 30px;
+          }
+          #thirdTitle {
+            width: 460px;
+            font-size: 12.6px;
+            margin: 50px 0 0 0;
+          }
+          #secondText {
+            width: 460px;
+            font-size: 9.3px;
+            margin: 60px 0px 3px 0;
+          }
+        }
+        #learnMore {
+          margin-top: 72px;
+          #backgroundButton {
+            width: 360px;
+            height: 18.5px;
+          }
+          #textButton {
+            width: 170px;
+            height: 15px;
+            left: 83.5px;
+            top: 2px;
+          }
+        }
+      }
+    }
+    #prescribing {
+      #prescribingLink {
+        font-size: 8px;
+      }
+      #prescribingArrow {
+        font-size: 8px;
+        margin: 0 0 0 3px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+#header {
+  position: relative;
+  width: 298px;
+  height: 59px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  #logosBackground {
+    position: absolute;
+    width: 293px;
+    left: 5px;
+  }
+  #shingrixLogo {
+    width: 101px;
+    height: 28.5px;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    #shingrixLogoImage {
+      width: 101px;
+      height: 28.5px;
+    }
+  }
+  #gskLogo {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 267.4998px;
+    top: 25.99998px;
+    #gskLogoImage {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+@media (min-width: 301px) {
+  #header {
+    width: 598px;
+    #logosBackground {
+      width: 586px;
+      height: 59px;
+      left: 12px;
+    }
+    #shingrixLogo {
+      width: 202px;
+      height: 36px;
+      left: 43px;
+      top: 15px;
+      #shingrixLogoImage {
+        width: 202px;
+        height: 36px;
+      }
+    }
+    #gskLogo {
+      width: 36px;
+      height: 24px;
+      left: 534px;
+      top: 20px;
+      #gskLogoImage {
+        width: 36px;
+        height: 24px;
+      }
+    }
+  }
+}

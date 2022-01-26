@@ -1,0 +1,531 @@
+html {
+  width: 300px;
+  height: 250px;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 298px;
+  height: 248px;
+}
+
+body #background {
+  position: absolute;
+  width: 298px;
+  height: 248px;
+  z-index: -3;
+}
+
+body #background #backgroundImage {
+  width: 298px;
+  height: 248px;
+  margin: 0;
+}
+
+@media (min-width: 301px) {
+  html {
+    width: 600px;
+  }
+  body {
+    width: 598px;
+    height: 248px;
+  }
+  body #background {
+    width: 598px;
+    height: 248px;
+  }
+  body #background #backgroundImage {
+    width: 598px;
+    height: 248px;
+  }
+}
+
+@font-face {
+  font-family: "Nolan-Bold";
+  src: url(../fonts/Nolan-Bold.woff);
+  font-style: bold;
+  font-weight: 700;
+}
+
+#header {
+  position: relative;
+  width: 298px;
+  height: 59px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#header #logosBackground {
+  position: absolute;
+  width: 293px;
+  left: 5px;
+}
+
+#header #shingrixLogo {
+  width: 101px;
+  height: 28.5px;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+}
+
+#header #shingrixLogo #shingrixLogoImage {
+  width: 101px;
+  height: 28.5px;
+}
+
+#header #gskLogo {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 267.4998px;
+  top: 25.99998px;
+}
+
+#header #gskLogo #gskLogoImage {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 301px) {
+  #header {
+    width: 598px;
+  }
+  #header #logosBackground {
+    width: 586px;
+    height: 59px;
+    left: 12px;
+  }
+  #header #shingrixLogo {
+    width: 202px;
+    height: 36px;
+    left: 43px;
+    top: 15px;
+  }
+  #header #shingrixLogo #shingrixLogoImage {
+    width: 202px;
+    height: 36px;
+  }
+  #header #gskLogo {
+    width: 36px;
+    height: 24px;
+    left: 534px;
+    top: 20px;
+  }
+  #header #gskLogo #gskLogoImage {
+    width: 36px;
+    height: 24px;
+  }
+}
+
+#middleSection {
+  width: 274px;
+  margin-left: 12px;
+  margin-right: 12px;
+  font-size: 6.15px;
+  color: white;
+  font-family: "Nolan-Bold";
+}
+
+#middleSection #fisrtsTexts {
+  margin-top: 19.5px;
+  display: block;
+  margin-bottom: 21px;
+}
+
+#middleSection #animatedMiddleSection {
+  margin-bottom: 27px;
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 15px;
+  height: 81px;
+}
+
+#middleSection #animatedMiddleSection #vaccines {
+  display: none;
+  margin-top: 7.5px;
+  width: 38px;
+}
+
+#middleSection #animatedMiddleSection #vaccines #syringer1 {
+  display: none;
+  width: 15.5px;
+  height: 59px;
+}
+
+#middleSection #animatedMiddleSection #vaccines #plusIcon {
+  display: none;
+  width: 7px;
+  height: 7px;
+  opacity: 0.14;
+  position: relative;
+  top: 30px;
+}
+
+#middleSection #animatedMiddleSection #vaccines #syringer2 {
+  display: none;
+  width: 15.5px;
+  height: 59px;
+}
+
+#middleSection #animatedMiddleSection #middleInfo {
+  margin-left: 9px;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #texts #firstTitle {
+  display: none;
+  font-family: "Nolan-Bold";
+  font-weight: 900;
+  position: absolute;
+  left: 60px;
+  font-size: 21px;
+  margin-top: 36px;
+  margin-bottom: 19.5px;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #texts #secondTitle {
+  display: none;
+  font-family: "Nolan-Bold";
+  font-weight: 900;
+  text-align: center;
+  font-size: 21px;
+  margin-top: 36px;
+  margin-bottom: 0;
+  position: absolute;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #texts #thirdTitle {
+  width: 230px;
+  display: none;
+  font-family: "Nolan-Bold";
+  font-weight: 900;
+  font-size: 12.6px;
+  margin: 36px 0 0 0;
+  position: absolute;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #texts #secondText {
+  width: 230px;
+  position: absolute;
+  display: none;
+  font-family: "Nolan-Bold";
+  font-size: 9.3px;
+  margin: 60px 39px 3px 0;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #learnMore {
+  cursor: pointer;
+  margin-top: 72px;
+  display: none;
+  position: relative;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #learnMore #backgroundButton {
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 18.5px;
+}
+
+#middleSection #animatedMiddleSection #middleInfo #learnMore #textButton {
+  position: absolute;
+  display: block;
+  width: 85px;
+  height: 8.5px;
+  left: 41.75px;
+  top: 4.5px;
+}
+
+#middleSection #prescribing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+#middleSection #prescribing #prescribingLink {
+  font-size: 6px;
+  margin: 0;
+}
+
+#middleSection #prescribing #prescribingLink a {
+  color: white;
+}
+
+#middleSection #prescribing #prescribingArrow {
+  margin: 0 0 0 2.4px;
+}
+
+#middleSection #prescribing #prescribingArrow a {
+  color: white;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+@media (min-width: 301px) {
+  #middleSection {
+    width: 548px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 7.4px;
+  }
+  #middleSection #animatedMiddleSection #vaccines {
+    margin-top: 7.5px;
+    width: 76px;
+  }
+  #middleSection #animatedMiddleSection #vaccines #syringer1 {
+    display: none;
+    width: 20px;
+    height: 59px;
+  }
+  #middleSection #animatedMiddleSection #vaccines #plusIcon {
+    display: none;
+    width: 10px;
+    height: 10px;
+  }
+  #middleSection #animatedMiddleSection #vaccines #syringer2 {
+    display: none;
+    width: 20px;
+    height: 59px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo {
+    margin-left: 18px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #texts #firstTitle {
+    left: 180px;
+    font-size: 30px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #texts #secondTitle {
+    left: 150px;
+    font-size: 30px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #texts #thirdTitle {
+    width: 460px;
+    font-size: 12.6px;
+    margin: 50px 0 0 0;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #texts #secondText {
+    width: 460px;
+    font-size: 9.3px;
+    margin: 60px 0px 3px 0;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #learnMore {
+    margin-top: 72px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #learnMore #backgroundButton {
+    width: 360px;
+    height: 18.5px;
+  }
+  #middleSection #animatedMiddleSection #middleInfo #learnMore #textButton {
+    width: 170px;
+    height: 15px;
+    left: 83.5px;
+    top: 2px;
+  }
+  #middleSection #prescribing #prescribingLink {
+    font-size: 8px;
+  }
+  #middleSection #prescribing #prescribingArrow {
+    font-size: 8px;
+    margin: 0 0 0 3px;
+  }
+}
+
+#isiSection {
+  width: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  height: 80px;
+  margin-top: 5px;
+  z-index: -2;
+}
+
+#isiSection #textsAndTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#isiSection #textsAndTitle #scrollHereTitle {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 60.5px;
+  height: 6px;
+  margin: 3px 18px 3px 0;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts {
+  overflow: scroll;
+  padding-bottom: 0;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts #isiTitle {
+  color: #ee0f17;
+  font-family: "Nolan-Bold";
+  font-weight: 900;
+  font-size: 9.6px;
+  margin: 4.5px 0 4.5px 9px;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts #isiInfoDots {
+  padding-left: 18px;
+  margin-left: 10.5px;
+  font-family: "Nolan-Bold";
+  font-size: 9px;
+  color: #4c4d4f;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts #isiInfoDots .isiInfoDotsLi {
+  margin: 0;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts .isiFinalTexts {
+  color: #4c4d4f;
+  font-family: "Nolan-Bold";
+  font-size: 9px;
+  margin: 4.5px 0 4.5px 9px;
+}
+
+#isiSection #textsAndTitle #scrollIsiTexts .isiFinalTexts #isiHyperLink {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (min-width: 301px) {
+  #isiSection {
+    border-bottom: 1px solid black;
+    width: 598px;
+    height: 76px;
+    margin-top: 7px;
+  }
+  #isiSection #textsAndTitle #scrollHereTitle {
+    width: 80px;
+    height: 8px;
+    margin: 3px 25px 3px 0;
+  }
+}
+
+#scrollIsiTexts::-webkit-scrollbar {
+  width: 15px;
+  height: 0px;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-track {
+  background-color: #c6c6c6;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb {
+  background-color: #9e090c;
+  background-clip: padding-box;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb:hover {
+  background-color: #707070;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb:active {
+  background-color: gray;
+}
+
+/* Buttons */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button {
+  background-color: #6e6e6e;
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 15px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 15px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+#recommendationSection {
+  display: none;
+  position: relative;
+}
+
+#recommendationSection #redBar {
+  width: 298px;
+  height: 15px;
+  background-color: #9e090c;
+  z-index: 3;
+}
+
+#recommendationSection #recommendationTitle {
+  font-family: "Nolan-Bold";
+  font-weight: 900;
+  color: #4c4d4f;
+  font-size: 15px;
+}
+
+#recommendationSection #grayBar {
+  width: 298px;
+  height: 3px;
+  background-color: #4c4d4f;
+}
+
+@media (min-width: 301px) {
+  #recommendationSection #redBar {
+    width: 598px;
+  }
+  #recommendationSection #recommendationTitle {
+    font-size: 15px;
+  }
+  #recommendationSection #grayBar {
+    width: 598px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+html {
+  width: 300px;
+  height: 250px;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 298px;
+  height: 248px;
+  #background {
+    position: absolute;
+    width: 298px;
+    height: 248px;
+    z-index: -3;
+    #backgroundImage {
+      width: 298px;
+      height: 248px;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 301px) {
+  html {
+    width: 600px;
+  }
+  body {
+    width: 598px;
+    height: 248px;
+    #background {
+      width: 598px;
+      height: 248px;
+      #backgroundImage {
+        width: 598px;
+        height: 248px;
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "Nolan-Bold";
+  src: url(../fonts/Nolan-Bold.woff);
+  font-style: bold;
+  font-weight: 700;
+}

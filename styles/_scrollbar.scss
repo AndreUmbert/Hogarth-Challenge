@@ -1,0 +1,130 @@
+#isiSection {
+  width: 298px;
+  display: flex;
+  background-color: white;
+  height: 80px;
+  margin-top: 5px;
+  z-index: -2;
+  #textsAndTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #scrollHereTitle {
+      align-self: flex-end;
+      width: 60.5px;
+      height: 6px;
+      margin: 3px 18px 3px 0;
+    }
+    #scrollIsiTexts {
+      overflow: scroll;
+      padding-bottom: 0;
+      #isiTitle {
+        color: rgb(238, 15, 23);
+        font-family: "Nolan-Bold";
+        font-weight: 900;
+        font-size: 9.6px;
+        margin: 4.5px 0 4.5px 9px;
+      }
+      #isiInfoDots {
+        padding-left: 18px;
+        margin-left: 10.5px;
+        font-family: "Nolan-Bold";
+        font-size: 9px;
+        color: rgb(76, 77, 79);
+        .isiInfoDotsLi {
+          margin: 0;
+        }
+      }
+      .isiFinalTexts {
+        color: rgb(76, 77, 79);
+        font-family: "Nolan-Bold";
+        font-size: 9px;
+        margin: 4.5px 0 4.5px 9px;
+        #isiHyperLink {
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 301px) {
+  #isiSection {
+    border-bottom: 1px solid black;
+    width: 598px;
+    height: 76px;
+    margin-top: 7px;
+    #textsAndTitle {
+      #scrollHereTitle {
+        width: 80px;
+        height: 8px;
+        margin: 3px 25px 3px 0;
+      }
+    }
+  }
+}
+
+#scrollIsiTexts::-webkit-scrollbar {
+  width: 15px;
+  height: 0px;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-track {
+  background-color: rgb(198, 198, 198);
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb {
+  background-color: rgb(158, 9, 12);
+  background-clip: padding-box;
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+#scrollIsiTexts::-webkit-scrollbar-thumb:active {
+  background-color: rgb(128, 128, 128);
+}
+
+/* Buttons */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button {
+  background-color: rgb(110, 110, 110);
+
+  display: block;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+/* Up */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement {
+  height: 15px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:decrement:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='50,00 0,50 100,50'/></svg>");
+}
+
+/* Down */
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment {
+  height: 15px;
+  width: 16px;
+  background-position: center 4px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>");
+}
+
+#scrollIsiTexts::-webkit-scrollbar-button:single-button:vertical:increment:active {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='rgb(128, 128, 128)'><polygon points='0,0 100,0 50,50'/></svg>");
+}

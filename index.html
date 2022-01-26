@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shingrix Vaccine Banner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background">
+        <img src="./assets/background.png" id="backgroundImage" alt="background">
+    </div>
+    <header id="header">
+        <img src="./assets/header.png" id="logosBackground" alt="header banner">
+        <div id="shingrixLogo">
+            <img src="./assets/shingrix_logo.png" id="shingrixLogoImage" alt="shingrix logo">
+        </div>
+        <div id="gskLogo" onclick="showRecommendations()">
+            <img src="./assets/gsk_logo.png" id="gskLogoImage" alt="gsk logo">
+        </div>
+    </header>
+    <section id="middleSection">
+        <h1 id="fisrtsTexts">SHINGRIX is a vaccine indicated for prevention of herpes zoster (shingles) in
+            adults aged 50 years
+            and older.
+            <br><br>
+            SHINGRIX is not indicated for prevention of primary varicella infection (chickenpox).
+        </h1>
+        <div id="animatedMiddleSection">
+            <div id="vaccines">
+                <img src="./assets/syringer1_icon.png" id="syringer1" alt="shingrix syringer logo 1">
+                <img src="./assets/plus_icon.png" id="plusIcon" alt="plus icon">
+                <img src="./assets/syringer2_icon.png" id="syringer2" alt="shingrix syringer logo 2">
+            </div>
+            <div id="middleInfo">
+                <div id="texts">
+                    <h2 id="firstTitle">HELP ENSURE</h2>
+                    <h3 id="secondTitle">THEY COME BACK</h3>
+                    <h4 id="thirdTitle">REMIND PATIENTS TO COMPLETE THE 2-DOSE SERIES</h4>
+                    <h5 id="secondText">The second dose should be administered 2 to 6 months after the first dose.</h5>
+                </div>
+                <div id="learnMore">
+                    <img src="./assets/learnmorebackground.png" id="backgroundButton"
+                        alt="Learn more Button background">
+                    <img src="./assets/learnmoretext.png" id="textButton" alt="Learn more button Text">
+                </div>
+            </div>
+        </div>
+        <div id="prescribing">
+            <p id="prescribingLink"><a
+                    href="https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Shingrix/pdf/SHINGRIX.PDF">PRESCRIBING
+                    INFORMATION</a></p>
+            <p id="prescribingArrow"><a
+                    href="https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Shingrix/pdf/SHINGRIX.PDF">></a>
+            </p>
+        </div>
+    </section>
+    <section id="isiSection">
+        <div id="textsAndTitle">
+            <img src="./assets/scrollHere.png" id="scrollHereTitle" alt="scroll here title">
+            <div class="viewport" id="scrollIsiTexts">
+                <p id="isiTitle">IMPORTANT SAFETY INFORMATION</p>
+                <ul id="isiInfoDots">
+                    <li class="isiInfoDotsLi">SHINGRIX is contraindicated in anyone with a history of a severe
+                        allergic
+                        reaction (eg,
+                        anaphylaxis) to any component of the vaccine or after a previous dose of SHINGRIX</li>
+                    <li class="isiInfoLi">Review immunization history for possible vaccine sensitivity and previous
+                        vaccination-related
+                        adverse reactions. Appropriate medical treatment and supervision must be available to manage
+                        possible anaphylactic reactions following administration of SHINGRIX</li>
+                    <li class="isiInfoLi">Solicited local adverse reactions in subjects aged 50 years and older were
+                        pain (78.0%), redness
+                        (38.1%), and swelling (25.9%)</li>
+                    <li class="isiInfoLi">Solicited general adverse reactions in subjects aged 50 years and older
+                        were
+                        myalgia (44.7%),
+                        fatigue (44.5%), headache (37.7%), shivering (26.8%), fever (20.5%), and gastrointestinal
+                        symptoms (17.3%)</li>
+                    <li class="isiInfoLi">SHINGRIX was not studied in pregnant or lactating women, and it is unknown
+                        if
+                        it is excreted in
+                        human milk. Therefore, it cannot be established whether there is vaccine-associated risk
+                        with
+                        SHINGRIX in pregnant women or if there are effects on breastfed infants or milk
+                        production/excretion</li>
+                    <li class="isiInfoLi">Vaccination with SHINGRIX may not result in protection of all vaccine
+                        recipients</li>
+                </ul>
+                <p class="isiFinalTexts">You are encouraged to report vaccine adverse events to the US Department of
+                    Health and Human
+                    Services.<br>
+                    Visit <a id="isiHyperLink" href="https://vaers.hhs.gov/">www.vaers.hhs.gov</a> to file a report,
+                    or
+                    call
+                    1-800-822-7967.</p>
+                <p class="isiFinalTexts"> This information is intended for US healthcare professionals only.</p>
+                <p class="isiFinalTexts">Trademarks owned or licensed by GSK</p>
+                <p class="isiFinalTexts">©2018 GSK or licensor.<br>
+                    831155R0 October 2018</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="recommendationSection">
+        <div id="redBar"></div>
+        <p id="recommendationTitle">RECOMMENDATIONS</p>
+        <div id="grayBar"></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="./scripts/animationGASP.js"></script>
+    <script src="./scripts/clicks.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+#recommendationSection {
+  display: none;
+  position: relative;
+  #redBar {
+    width: 298px;
+    height: 15px;
+    background-color: #9e090c;
+    z-index: 3;
+  }
+  #recommendationTitle {
+    font-family: "Nolan-Bold";
+    font-weight: 900;
+    color: #4c4d4f;
+    font-size: 15px;
+  }
+  #grayBar {
+    width: 298px;
+    height: 3px;
+    background-color: #4c4d4f;
+  }
+}
+
+@media (min-width: 301px) {
+  #recommendationSection {
+    #redBar {
+      width: 598px;
+    }
+    #recommendationTitle {
+      font-size: 15px;
+    }
+    #grayBar {
+      width: 598px;
+    }
+  }
+}
